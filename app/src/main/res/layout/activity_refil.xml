@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".GasMart">
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/cylinder_na"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RE-FILL"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="60dp"
+            tools:layout_editor_absoluteY="24dp" />
+
+
+
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="39dp"
+            android:layout_height="36dp"
+            app:srcCompat="@drawable/arrow"
+            tools:layout_editor_absoluteX="9dp"
+            tools:layout_editor_absoluteY="24dp"
+            tools:ignore="MissingConstraints" />
+
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="60dp"
+            android:layout_height="117dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintStart_toEndOf="@+id/currentorder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/profile"
+            tools:ignore="MissingConstraints" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="157dp"
+            android:layout_height="160dp"
+            android:layout_rowWeight="2"
+            android:layout_columnWeight="2"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="229dp"
+            tools:layout_editor_absoluteY="184dp">
+
+                <ImageView
+                    android:id="@+id/laugfsbig_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/laugfs" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="157dp"
+            android:layout_height="160dp"
+            android:layout_rowWeight="2"
+            android:layout_columnWeight="2"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="184dp">
+
+                <ImageView
+                    android:id="@+id/litrobig_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/litro" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="157dp"
+            android:layout_height="160dp"
+            android:layout_rowWeight="2"
+            android:layout_columnWeight="2"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="229dp"
+            tools:layout_editor_absoluteY="368dp">
+
+                <ImageView
+                    android:id="@+id/litromedium_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/litros" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="157dp"
+            android:layout_height="160dp"
+            android:layout_rowWeight="2"
+            android:layout_columnWeight="2"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="368dp">
+
+                <ImageView
+                    android:id="@+id/laugfsmedium_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/laugfss" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="157dp"
+            android:layout_height="160dp"
+            android:layout_rowWeight="2"
+            android:layout_columnWeight="2"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="542dp">
+
+                <ImageView
+                    android:id="@+id/litrosmall_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/litrom" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="157dp"
+            android:layout_height="160dp"
+            android:layout_rowWeight="2"
+            android:layout_columnWeight="2"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="229dp"
+            tools:layout_editor_absoluteY="542dp">
+
+                <ImageView
+                    android:id="@+id/laugfssmall_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/laugfsm" />
+        </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

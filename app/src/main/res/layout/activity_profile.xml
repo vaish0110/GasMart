@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background"
+            tools:context=".GasMart">
+
+                <TextView
+                    android:id="@+id/currentorder"
+                    android:layout_width="99dp"
+                    android:layout_height="wrap_content"
+                    android:text="PROFILE"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="63dp"
+                    tools:layout_editor_absoluteY="24dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="148dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="12dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintBottom_toTopOf="@+id/cardView16"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Number"
+                    tools:ignore="MissingConstraints">
+
+                        <Button
+                            android:id="@+id/wallet"
+                            android:layout_width="200dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/custom_button"
+                            android:text="@string/Wallet"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:ignore="MissingConstraints" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="148dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="12dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView17"
+                    tools:ignore="MissingConstraints">
+
+                        <Button
+                            android:id="@+id/help"
+                            android:layout_width="200dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/custom_button"
+                            android:text="@string/Help"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.497"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:ignore="MissingConstraints"
+                            tools:layout_editor_absoluteY="418dp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView23"
+                    android:layout_width="match_parent"
+                    android:layout_height="148dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="12dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView16"
+                    tools:ignore="MissingConstraints">
+
+                        <Button
+                            android:id="@+id/findus"
+                            android:layout_width="200dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/custom_button"
+                            android:text="@string/FindUs"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.502"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:ignore="MissingConstraints"
+                            tools:layout_editor_absoluteY="535dp" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="177dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="12dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView23"
+                    tools:ignore="MissingConstraints">
+
+                        <Button
+                            android:id="@+id/logout"
+                            android:layout_width="200dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/custom_button"
+                            android:text="@string/Logout"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.502"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:ignore="MissingConstraints"
+                            tools:layout_editor_absoluteY="535dp" />
+                </androidx.cardview.widget.CardView>
+
+
+                <ImageView
+                    android:id="@+id/profile"
+                    android:layout_width="60dp"
+                    android:layout_height="117dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.95"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/profile"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/Name"
+                    android:layout_width="100dp"
+                    android:layout_height="19dp"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Jung Hook"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/currentorder"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/Address"
+                    android:layout_width="135dp"
+                    android:layout_height="19dp"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="139dp"
+                    android:text="Main Street,Colombo"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/profile"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Name"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/Number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginTop="10dp"
+                    android:text="077-1234 567"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Address"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/edit"
+                    android:layout_width="27dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/edit"
+                    app:layout_constraintStart_toEndOf="@+id/Name"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="58dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+

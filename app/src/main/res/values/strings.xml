@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">GasMart</string>
+    <string name="Wallet">wallet</string>
+    <string name="Help">help</string>
+    <string name="FindUs">find_us</string>
+    <string name="Logout">logout</string>
+    <string name="PastOrders">pastorders</string>
+    <string name="CurrentOrders">currentorders</string>
+    <string name="qty_1">qty 1</string>
+    <string name="creditordebit">Credit or debit card</string>
+    <string name="cash">Cash</string>
+    <string name="paypal">PayPal</string>
+    <string name="cardnumber">Card Number</string>
+    <string name="expdate">Exp.Date</string>
+    <string name="cvv">CVV</string>
+    <string name="country">Country</string>
+    <string name="nickname">Nickname(optional)</string>
+    <string name="next">Next</string>
+    <string name="cancelorder">Cancel Order</string>
+    <string name="addtocart">ADD TO CART</string>
+    <string name="email">Email</string>
+    <string name="sendcode">SEND CODE</string>
+    <string name="resend">RE-SEND</string>
+    <string name="token">Token</string>
+    <string name="confirm">CONFIRM</string>
+    <string name="newpassword">New_Password</string>
+    <string name="confirmpassword">Confirm_Password</string>
+    <string name="savecontinue">SAVE_CONTINUE</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="registernow">REGISTER NOW</string>
+    <string name="addmoreproduct">ADD MORE PRODUCT</string>
+    <string name="Confrimandcontinue"><![CDATA[Confrim &amp; Continue]]></string>
+    <string name="address">Address</string>
+    <string name="mobilenumber">Mobile Number</string>
+</resources>

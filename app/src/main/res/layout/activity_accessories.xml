@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".GasMart">
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="39dp"
+            android:layout_height="36dp"
+            app:srcCompat="@drawable/arrow"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="9dp"
+            tools:layout_editor_absoluteY="24dp" />
+
+        <TextView
+            android:id="@+id/currentorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accessories"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="24dp" />
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="60dp"
+            android:layout_height="117dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintStart_toEndOf="@+id/currentorder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/profile"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="157dp"
+            android:layout_height="160dp"
+            android:layout_rowWeight="2"
+            android:layout_columnWeight="2"
+            android:layout_marginStart="219dp"
+            android:layout_marginTop="197dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="374dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/regulator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/regulator" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="157dp"
+            android:layout_height="160dp"
+            android:layout_rowWeight="2"
+            android:layout_columnWeight="2"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="197dp"
+            android:layout_marginEnd="227dp"
+            android:layout_marginBottom="374dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/presure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/presure" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="157dp"
+            android:layout_height="160dp"
+            android:layout_rowWeight="2"
+            android:layout_columnWeight="2"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="219dp"
+            tools:layout_editor_absoluteY="399dp">
+
+                <ImageView
+                    android:id="@+id/sim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/sim" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="157dp"
+            android:layout_height="160dp"
+            android:layout_rowWeight="2"
+            android:layout_columnWeight="2"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="399dp">
+
+                <ImageView
+                    android:id="@+id/burner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/burner" />
+        </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
