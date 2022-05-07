@@ -11,13 +11,38 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GasMart">
         <activity
-            android:name=".login"
+            android:name=".register"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".login"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".dashboard"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".product"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".cylinder"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".accessories"
+            android:exported="false">
+
         </activity>
     </application>
 
