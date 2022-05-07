@@ -63,15 +63,16 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="337dp"
-            android:layout_height="506dp">
+            android:layout_height="532dp">
 
             <ImageView
-                android:id="@+id/imageView11"
+                android:id="@+id/photo"
                 android:layout_width="54dp"
                 android:layout_height="38dp"
+                android:onClick="onClickUpdatePhoto"
                 app:srcCompat="@drawable/upload"
-                tools:layout_editor_absoluteX="257dp"
-                tools:layout_editor_absoluteY="352dp" />
+                tools:layout_editor_absoluteX="256dp"
+                tools:layout_editor_absoluteY="317dp" />
 
             <TextView
 
@@ -82,12 +83,12 @@
                 android:textSize="25sp"
                 android:textStyle="bold"
                 tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="352dp" />
+                tools:layout_editor_absoluteX="13dp"
+                tools:layout_editor_absoluteY="318dp" />
 
             <TextView
 
-                android:id="@+id/cardnumber"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Name"
@@ -100,7 +101,7 @@
 
             <TextView
 
-                android:id="@+id/country"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/mobilenumber"
@@ -113,7 +114,7 @@
 
             <TextView
 
-                android:id="@+id/cvv"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/address"
@@ -125,7 +126,7 @@
                 tools:layout_editor_absoluteY="125dp" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName2"
+                android:id="@+id/PersonName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -135,7 +136,7 @@
                 tools:layout_editor_absoluteY="60dp" />
 
             <EditText
-                android:id="@+id/editTextexpdate"
+                android:id="@+id/address"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -144,7 +145,7 @@
                 tools:layout_editor_absoluteY="159dp" />
 
             <EditText
-                android:id="@+id/editTextNumber3"
+                android:id="@+id/mobilenumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -153,15 +154,26 @@
                 tools:layout_editor_absoluteY="259dp" />
 
             <Button
-                android:id="@+id/buttonnext"
+                android:id="@+id/buttonsave"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Save"
+                android:onClick="onClickSave"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintHorizontal_bias="0.542"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="425dp" />
+                tools:layout_editor_absoluteY="370dp" />
 
+            <Button
+                android:id="@+id/buttonremove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remove Account"
+                android:onClick="onClickRemove"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.554"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="426dp" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>

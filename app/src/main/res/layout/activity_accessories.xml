@@ -9,12 +9,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".GasMart">
+    tools:context=".login">
 
         <ImageView
             android:id="@+id/arrow"
             android:layout_width="39dp"
             android:layout_height="36dp"
+            android:onClick="onClickBackward"
             app:srcCompat="@drawable/arrow"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="9dp"
@@ -39,11 +40,10 @@
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.95"
-            app:layout_constraintStart_toEndOf="@+id/currentorder"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/profile"
-            tools:ignore="MissingConstraints" />
+            />
 
         <androidx.cardview.widget.CardView
             android:layout_width="157dp"
@@ -66,6 +66,7 @@
                     android:id="@+id/regulator"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="ViewRegulator"
                     app:srcCompat="@drawable/regulator" />
         </androidx.cardview.widget.CardView>
 
@@ -87,9 +88,10 @@
             tools:ignore="MissingConstraints">
 
                 <ImageView
-                    android:id="@+id/presure"
+                    android:id="@+id/pressure"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="ViewPressure"
                     app:srcCompat="@drawable/presure" />
         </androidx.cardview.widget.CardView>
 
@@ -108,6 +110,7 @@
                     android:id="@+id/sim"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="ViewSim"
                     app:srcCompat="@drawable/sim" />
         </androidx.cardview.widget.CardView>
 
@@ -126,6 +129,7 @@
                     android:id="@+id/burner"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="ViewBurner"
                     app:srcCompat="@drawable/burner" />
         </androidx.cardview.widget.CardView>
 

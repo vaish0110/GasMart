@@ -9,7 +9,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/background"
-    tools:context=".GasMart">
+    tools:context=".login">
 
         <TextView
             android:id="@+id/currentorder"
@@ -45,6 +45,7 @@
                     android:layout_marginBottom="10dp"
                     android:background="@drawable/custom_button"
                     android:text="@string/PastOrders"
+                    android:onClick="ViewPastOrders"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
@@ -73,6 +74,7 @@
                     android:layout_gravity="center"
                     android:background="@drawable/custom_button"
                     android:text="@string/CurrentOrders"
+                    android:onClick="ViewCurrentOrders"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.497"
                     app:layout_constraintStart_toStartOf="parent"

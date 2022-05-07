@@ -31,13 +31,18 @@
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/GasMart/app/src/main/res/layout/activity_refil.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/GasMart/app/src/main/res/layout/activity_register.xml" value="0.22" />
         <entry key="..\:/Users/ADMIN/AndroidStudioProjects/GasMart/app/src/main/res/layout/activity_wallet.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/HP/Desktop/GasMart/app/src/main/res/layout/activity_accessories.xml" value="0.264" />
+        <entry key="..\:/Users/HP/Desktop/GasMart/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.124" />
+        <entry key="..\:/Users/HP/Desktop/GasMart/app/src/main/res/drawable/custom_button.xml" value="0.124" />
+        <entry key="..\:/Users/HP/Desktop/GasMart/app/src/main/res/drawable/ic_launcher_background.xml" value="0.124" />
+        <entry key="..\:/Users/HP/Desktop/GasMart/app/src/main/res/layout/activity_accessories.xml" value="0.1" />
         <entry key="..\:/Users/HP/Desktop/GasMart/app/src/main/res/layout/activity_addcard.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/HP/Desktop/GasMart/app/src/main/res/layout/activity_addpaymentmethod.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/HP/Desktop/GasMart/app/src/main/res/layout/activity_currentorder.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/HP/Desktop/GasMart/app/src/main/res/layout/activity_cylinder.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/HP/Desktop/GasMart/app/src/main/res/layout/activity_cylinderview.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/HP/Desktop/GasMart/app/src/main/res/layout/activity_dashboard.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/Desktop/GasMart/app/src/main/res/layout/activity_dashboard.xml" value="0.1" />
+        <entry key="..\:/Users/HP/Desktop/GasMart/app/src/main/res/layout/activity_editcard.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/HP/Desktop/GasMart/app/src/main/res/layout/activity_editorder.xml" value="0.264" />
         <entry key="..\:/Users/HP/Desktop/GasMart/app/src/main/res/layout/activity_findus.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/HP/Desktop/GasMart/app/src/main/res/layout/activity_forgotpassword1.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/HP/Desktop/GasMart/app/src/main/res/layout/activity_forgotpassword2.xml" value="0.25416666666666665" />
@@ -52,6 +57,7 @@
         <entry key="..\:/Users/HP/Desktop/GasMart/app/src/main/res/layout/activity_profile_edit.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/HP/Desktop/GasMart/app/src/main/res/layout/activity_refil.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/HP/Desktop/GasMart/app/src/main/res/layout/activity_register.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/HP/Desktop/GasMart/app/src/main/res/layout/activity_viewcard.xml" value="0.25052083333333336" />
         <entry key="..\:/Users/HP/Desktop/GasMart/app/src/main/res/layout/activity_wallet.xml" value="0.25416666666666665" />
       </map>
     </option>

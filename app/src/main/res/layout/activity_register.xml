@@ -43,32 +43,14 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
                 android:layout_marginTop="20dp"
-                android:text="First name"
+                android:text="Username"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/firstname"
+                android:id="@+id/name"
                 android:layout_width="320dp"
-                android:layout_height="wrap_content"
-                android:inputType="text"
-                android:maxLines="1"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="left"
-                android:layout_marginTop="20dp"
-                android:text="Last name"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <EditText
-                android:id="@+id/lastname"
-                android:layout_width="322dp"
                 android:layout_height="wrap_content"
                 android:inputType="text"
                 android:maxLines="1"
@@ -85,7 +67,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/LogInemail"
+                android:id="@+id/Email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
@@ -121,7 +103,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/LogInPassword"
+                android:id="@+id/Password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
@@ -139,7 +121,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/conLogInPassword"
+                android:id="@+id/conPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
@@ -154,11 +136,12 @@
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/custom_button"
                 android:text="Register Now"
+                android:onClick="onClickRegisterNow"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:ignore="MissingConstraints" />
+                />
 
         </LinearLayout>
 

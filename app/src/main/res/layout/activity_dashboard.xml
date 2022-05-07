@@ -9,7 +9,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".GasMart">
+    tools:context=".login">
 
 
 
@@ -36,14 +36,13 @@
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.95"
-            app:layout_constraintStart_toEndOf="@+id/currentorder"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/profile"
             tools:ignore="MissingConstraints" />
 
 
-        <androidx.cardview.widget.CardView
+        =<androidx.cardview.widget.CardView
             android:layout_width="157dp"
             android:layout_height="160dp"
             android:layout_rowWeight="2"
@@ -62,9 +61,10 @@
 
 
                 <ImageView
-                    android:id="@+id/imageView18"
+                    android:id="@+id/vieworder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="onClickViewOrder"
                     app:srcCompat="@drawable/orders" />
         </androidx.cardview.widget.CardView>
 
@@ -87,9 +87,10 @@
 
 
                 <ImageView
-                    android:id="@+id/imageView17"
+                    android:id="@+id/viewproduct"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="onClickProduct"
                     app:srcCompat="@drawable/product2" />
         </androidx.cardview.widget.CardView>
 
@@ -106,9 +107,10 @@
 
 
                 <ImageView
-                    android:id="@+id/imageView20"
+                    android:id="@+id/viewsetting"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="onClickSetting"
                     app:srcCompat="@drawable/settings" />
         </androidx.cardview.widget.CardView>
 
@@ -125,9 +127,10 @@
 
 
                 <ImageView
-                    android:id="@+id/imageView19"
+                    android:id="@+id/viewprofile"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="onClickProfile"
                     app:srcCompat="@drawable/profile2" />
         </androidx.cardview.widget.CardView>
 

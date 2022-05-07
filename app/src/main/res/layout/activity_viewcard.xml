@@ -15,7 +15,7 @@
             android:id="@+id/currentorder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Add Card"
+            android:text="Visa"
             android:textColor="@color/black"
             android:textSize="25sp"
             android:textStyle="bold"
@@ -27,7 +27,6 @@
             android:id="@+id/arrow"
             android:layout_width="39dp"
             android:layout_height="36dp"
-            android:onClick="onClickBackward"
             app:srcCompat="@drawable/arrow"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="9dp"
@@ -69,20 +68,7 @@
 
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/nickname"
-                    android:textColor="@color/black"
-                    android:textSize="25sp"
-                    android:textStyle="bold"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteX="18dp"
-                    tools:layout_editor_absoluteY="312dp" />
-
-                <TextView
-
-
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/cardnumber"
+                    android:text="Visa"
                     android:textColor="@color/black"
                     android:textSize="25sp"
                     android:textStyle="bold"
@@ -93,97 +79,39 @@
                 <TextView
 
 
+                    android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/country"
+                    android:layout_marginStart="16dp"
+                    android:text=". . . .  XXXX"
                     android:textColor="@color/black"
                     android:textSize="25sp"
                     android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
                     tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteX="18dp"
-                    tools:layout_editor_absoluteY="222dp" />
-
-                <TextView
-
-
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/cvv"
-                    android:textColor="@color/black"
-                    android:textSize="25sp"
-                    android:textStyle="bold"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteX="192dp"
-                    tools:layout_editor_absoluteY="125dp" />
-
-                <TextView
-
-
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/expdate"
-                    android:textColor="@color/black"
-                    android:textSize="25sp"
-                    android:textStyle="bold"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteX="16dp"
-                    tools:layout_editor_absoluteY="125dp" />
-
-                <EditText
-                    android:id="@+id/expdate"
-                    android:layout_width="123dp"
-                    android:layout_height="38dp"
-                    android:ems="10"
-                    android:inputType="textPostalAddress"
-                    tools:layout_editor_absoluteX="16dp"
-                    tools:layout_editor_absoluteY="159dp" />
-
-                <EditText
-                    android:id="@+id/cvv"
-                    android:layout_width="123dp"
-                    android:layout_height="38dp"
-                    android:ems="10"
-                    android:inputType="textPostalAddress"
-                    tools:layout_editor_absoluteX="192dp"
-                    tools:layout_editor_absoluteY="159dp" />
-
-                <EditText
-                    android:id="@+id/cardnumber"
-                    android:layout_width="304dp"
-                    android:layout_height="42dp"
-                    android:ems="10"
-                    android:inputType="number"
-                    tools:layout_editor_absoluteX="16dp"
-                    tools:layout_editor_absoluteY="58dp" />
-
-                <EditText
-                    android:id="@+id/nickname"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="number"
-                    tools:layout_editor_absoluteX="18dp"
-                    tools:layout_editor_absoluteY="346dp" />
-
-                <EditText
-                    android:id="@+id/country"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="number"
-                    tools:layout_editor_absoluteX="18dp"
-                    tools:layout_editor_absoluteY="255dp" />
+                    tools:layout_editor_absoluteY="70dp" />
 
                 <Button
-                    android:id="@+id/buttonnext"
+                    android:id="@+id/removecard"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/next"
-                    android:onClick="onClickNext"
+                    android:text="Remove Card"
+                    android:onClick="onClickRemove"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.497"
                     app:layout_constraintStart_toStartOf="parent"
-                    tools:layout_editor_absoluteY="425dp" />
+                    tools:layout_editor_absoluteY="346dp" />
+
+                <Button
+                    android:id="@+id/editcard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="98dp"
+                    android:layout_marginEnd="98dp"
+                    android:text="Edit Card"
+                    android:onClick="onClickEdit"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="276dp" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

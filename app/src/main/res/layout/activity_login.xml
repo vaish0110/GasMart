@@ -12,7 +12,6 @@
     android:background="@drawable/background">
 
     <TextView
-        android:id="@+id/currentorder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="LOGIN"
@@ -47,7 +46,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/LogInemail"
+            android:id="@+id/LogInEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
@@ -73,6 +72,7 @@
             android:textColor="@color/black" />
 
         <TextView
+            android:id="@+id/ForgotPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -92,11 +92,12 @@
             android:background="@drawable/custom_button"
             android:backgroundTint="@android:color/holo_blue_dark"
             android:text="@string/login"
+            android:onClick="onClickLogin"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints" />
+            />
 
         <TextView
             android:layout_width="match_parent"
@@ -116,11 +117,12 @@
             android:layout_marginBottom="10dp"
             android:background="@drawable/custom_button"
             android:text="@string/registernow"
+            android:onClick="onClickRegisterNow"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints" />
+            />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
