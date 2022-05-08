@@ -12,15 +12,15 @@
 
 
         <TextView
-            android:id="@+id/currentorder"
+            android:id="@+id/editcard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="EditCard"
             android:textColor="@color/black"
             android:textSize="25sp"
             android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/arrow"
             tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="60dp"
             tools:layout_editor_absoluteY="24dp" />
 
         <ImageView
@@ -35,15 +35,14 @@
 
         <ImageView
             android:id="@+id/profile"
-            android:layout_width="60dp"
-            android:layout_height="117dp"
+            android:layout_width="52dp"
+            android:layout_height="43dp"
             android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.95"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/profile"
-             />
+            app:srcCompat="@drawable/profile" />
 
         <androidx.cardview.widget.CardView
             android:layout_width="377dp"
@@ -55,6 +54,10 @@
             app:cardMaxElevation="12dp"
             app:cardPreventCornerOverlap="true"
             app:cardUseCompatPadding="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editcard"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="9dp"
             tools:layout_editor_absoluteY="145dp">
@@ -68,120 +71,183 @@
 
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="312dp"
+                    android:layout_marginEnd="97dp"
+                    android:layout_marginBottom="160dp"
                     android:text="@string/nickname"
                     android:textColor="@color/black"
                     android:textSize="25sp"
                     android:textStyle="bold"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteX="18dp"
-                    tools:layout_editor_absoluteY="312dp" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
 
                 <TextView
 
 
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="171dp"
+                    android:layout_marginBottom="448dp"
                     android:text="@string/cardnumber"
                     android:textColor="@color/black"
                     android:textSize="25sp"
                     android:textStyle="bold"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteX="16dp"
-                    tools:layout_editor_absoluteY="24dp" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
 
                 <TextView
 
 
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="222dp"
+                    android:layout_marginEnd="230dp"
+                    android:layout_marginBottom="249dp"
                     android:text="@string/country"
                     android:textColor="@color/black"
                     android:textSize="25sp"
                     android:textStyle="bold"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteX="18dp"
-                    tools:layout_editor_absoluteY="222dp" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
 
                 <TextView
 
 
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="192dp"
+                    android:layout_marginTop="125dp"
+                    android:layout_marginEnd="96dp"
+                    android:layout_marginBottom="347dp"
                     android:text="@string/cvv"
                     android:textColor="@color/black"
                     android:textSize="25sp"
                     android:textStyle="bold"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteX="192dp"
-                    tools:layout_editor_absoluteY="125dp" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
 
                 <TextView
 
 
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="125dp"
+                    android:layout_marginEnd="221dp"
+                    android:layout_marginBottom="346dp"
                     android:text="@string/expdate"
                     android:textColor="@color/black"
                     android:textSize="25sp"
                     android:textStyle="bold"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteX="16dp"
-                    tools:layout_editor_absoluteY="125dp" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
 
                 <EditText
                     android:id="@+id/expdate"
                     android:layout_width="123dp"
                     android:layout_height="38dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="159dp"
+                    android:layout_marginEnd="198dp"
+                    android:layout_marginBottom="309dp"
                     android:ems="10"
                     android:inputType="textPostalAddress"
-                    tools:layout_editor_absoluteX="16dp"
-                    tools:layout_editor_absoluteY="159dp" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
                     android:id="@+id/cvv"
                     android:layout_width="123dp"
                     android:layout_height="38dp"
+                    android:layout_marginStart="192dp"
+                    android:layout_marginTop="159dp"
+                    android:layout_marginEnd="22dp"
+                    android:layout_marginBottom="309dp"
                     android:ems="10"
                     android:inputType="textPostalAddress"
-                    tools:layout_editor_absoluteX="192dp"
-                    tools:layout_editor_absoluteY="159dp" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
                     android:id="@+id/cardnumber"
                     android:layout_width="304dp"
                     android:layout_height="42dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="58dp"
+                    android:layout_marginEnd="17dp"
+                    android:layout_marginBottom="406dp"
                     android:ems="10"
                     android:inputType="number"
-                    tools:layout_editor_absoluteX="16dp"
-                    tools:layout_editor_absoluteY="58dp" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
                     android:id="@+id/nickname"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="346dp"
+                    android:layout_marginEnd="109dp"
+                    android:layout_marginBottom="115dp"
                     android:ems="10"
                     android:inputType="number"
-                    tools:layout_editor_absoluteX="18dp"
-                    tools:layout_editor_absoluteY="346dp" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
                     android:id="@+id/country"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="255dp"
+                    android:layout_marginEnd="109dp"
+                    android:layout_marginBottom="206dp"
                     android:ems="10"
                     android:inputType="number"
-                    tools:layout_editor_absoluteX="18dp"
-                    tools:layout_editor_absoluteY="255dp" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
                     android:id="@+id/buttonnext"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="425dp"
+                    android:layout_marginBottom="32dp"
                     android:text="@string/next"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.497"
                     app:layout_constraintStart_toStartOf="parent"
-                    tools:layout_editor_absoluteY="425dp" />
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
