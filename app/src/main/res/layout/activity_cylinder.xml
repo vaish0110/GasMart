@@ -5,164 +5,185 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/background"
-    tools:context=".login">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background"
+            tools:context=".GasMart">
 
 
-
-
-
-
-
-        <TextView
-            android:id="@+id/cylinder_na"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="GAS CYLINDER"
-            android:textColor="@color/black"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="60dp"
-            tools:layout_editor_absoluteY="24dp" />
-
-
-
-
-        <ImageView
-            android:id="@+id/arrow"
-            android:layout_width="39dp"
-            android:layout_height="36dp"
-            app:srcCompat="@drawable/arrow"
-            tools:layout_editor_absoluteX="9dp"
-            tools:layout_editor_absoluteY="24dp"
-            tools:ignore="MissingConstraints" />
-
-
-        <ImageView
-            android:id="@+id/profile"
-            android:layout_width="60dp"
-            android:layout_height="117dp"
-            android:layout_marginTop="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.95"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/profile"
-             />
-
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="157dp"
-            android:layout_height="160dp"
-            android:layout_rowWeight="2"
-            android:layout_columnWeight="2"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="8dp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="229dp"
-            tools:layout_editor_absoluteY="184dp">
-
-                <ImageView
-                    android:id="@+id/laugfsbig"
+                <TextView
+                    android:id="@+id/cylinder_na"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/laugfs" />
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="157dp"
-            android:layout_height="160dp"
-            android:layout_rowWeight="2"
-            android:layout_columnWeight="2"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="8dp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="29dp"
-            tools:layout_editor_absoluteY="184dp">
+                    android:text="GAS CYLINDER"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/arrow"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="24dp" />
 
                 <ImageView
-                    android:id="@+id/litrobig"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/litro" />
-        </androidx.cardview.widget.CardView>
+                    android:id="@+id/arrow"
+                    android:layout_width="39dp"
+                    android:layout_height="36dp"
+                    app:srcCompat="@drawable/arrow"
+                    tools:layout_editor_absoluteX="9dp"
+                    tools:layout_editor_absoluteY="24dp"
+                    tools:ignore="MissingConstraints" />
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="157dp"
-            android:layout_height="160dp"
-            android:layout_rowWeight="2"
-            android:layout_columnWeight="2"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="8dp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="229dp"
-            tools:layout_editor_absoluteY="368dp">
 
                 <ImageView
-                    android:id="@+id/litromedium"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/litros" />
-        </androidx.cardview.widget.CardView>
+                    android:id="@+id/profile"
+                    android:layout_width="60dp"
+                    android:layout_height="117dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.954"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/profile" />
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="157dp"
-            android:layout_height="160dp"
-            android:layout_rowWeight="2"
-            android:layout_columnWeight="2"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="8dp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="29dp"
-            tools:layout_editor_absoluteY="368dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="157dp"
+                    android:layout_height="160dp"
+                    android:layout_rowWeight="2"
+                    android:layout_columnWeight="2"
+                    android:layout_marginTop="124dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="8dp"
+                    app:layout_constraintBottom_toTopOf="@+id/cardView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.901"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cylinder_na"
+                    app:layout_constraintVertical_bias="0.701"
+                    tools:ignore="MissingConstraints">
 
-                <ImageView
-                    android:id="@+id/laugfsmedium"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/laugfss" />
-        </androidx.cardview.widget.CardView>
+                        <ImageView
+                            android:id="@+id/laugfsbig"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/laugfs" />
+                </androidx.cardview.widget.CardView>
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="157dp"
-            android:layout_height="160dp"
-            android:layout_rowWeight="2"
-            android:layout_columnWeight="2"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="8dp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="29dp"
-            tools:layout_editor_absoluteY="542dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="157dp"
+                    android:layout_height="160dp"
+                    android:layout_rowWeight="2"
+                    android:layout_columnWeight="2"
+                    android:layout_marginTop="124dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="8dp"
+                    app:layout_constraintBottom_toTopOf="@+id/cardView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.114"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cylinder_na"
+                    app:layout_constraintVertical_bias="0.701"
+                    tools:ignore="MissingConstraints">
 
-                <ImageView
-                    android:id="@+id/litrosmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/litrom" />
-        </androidx.cardview.widget.CardView>
+                        <ImageView
+                            android:id="@+id/litrobig"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/litro" />
+                </androidx.cardview.widget.CardView>
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="157dp"
-            android:layout_height="160dp"
-            android:layout_rowWeight="2"
-            android:layout_columnWeight="2"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="8dp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="229dp"
-            tools:layout_editor_absoluteY="542dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="157dp"
+                    android:layout_height="160dp"
+                    android:layout_rowWeight="2"
+                    android:layout_columnWeight="2"
+                    android:layout_marginTop="308dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="8dp"
+                    app:layout_constraintBottom_toTopOf="@+id/cardView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.901"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cylinder_na"
+                    app:layout_constraintVertical_bias="0.701"
+                    tools:ignore="MissingConstraints">
 
-                <ImageView
-                    android:id="@+id/laugfssmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/laugfsm" />
-        </androidx.cardview.widget.CardView>
+                        <ImageView
+                            android:id="@+id/litromedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/litros" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="157dp"
+                    android:layout_height="160dp"
+                    android:layout_rowWeight="2"
+                    android:layout_columnWeight="2"
+                    android:layout_marginTop="308dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="8dp"
+                    app:layout_constraintBottom_toTopOf="@+id/cardView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.114"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cylinder_na"
+                    app:layout_constraintVertical_bias="0.701"
+                    tools:ignore="MissingConstraints">
+
+                        <ImageView
+                            android:id="@+id/laugfsmedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/laugfss" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="157dp"
+                    android:layout_height="160dp"
+                    android:layout_rowWeight="2"
+                    android:layout_columnWeight="2"
+                    android:layout_marginTop="484dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="8dp"
+                    app:layout_constraintBottom_toTopOf="@+id/cardView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.114"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cylinder_na"
+                    app:layout_constraintVertical_bias="0.701"
+                    tools:ignore="MissingConstraints">
+
+                        <ImageView
+                            android:id="@+id/litrosmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/litrom" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="157dp"
+                    android:layout_height="160dp"
+                    android:layout_rowWeight="2"
+                    android:layout_columnWeight="2"
+                    android:layout_marginTop="484dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="8dp"
+                    app:layout_constraintBottom_toTopOf="@+id/cardView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.901"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cylinder_na"
+                    app:layout_constraintVertical_bias="0.701"
+                    tools:ignore="MissingConstraints">
+
+                        <ImageView
+                            android:id="@+id/laugfssmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/laugfsm" />
+                </androidx.cardview.widget.CardView>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
+

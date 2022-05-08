@@ -4,172 +4,216 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
-    tools:context=".login">
+    android:background="@drawable/background">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            tools:context=".login">
 
 
-
-
-
-
-
-        <TextView
-            android:id="@+id/cylinder_na"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="GAS CYLINDER"
-            android:textColor="@color/black"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="60dp"
-            tools:layout_editor_absoluteY="24dp" />
-
-
-        <ImageView
-            android:id="@+id/arrow"
-            android:layout_width="39dp"
-            android:layout_height="36dp"
-            app:srcCompat="@drawable/arrow"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="9dp"
-            tools:layout_editor_absoluteY="24dp" />
-
-
-        <ImageView
-            android:id="@+id/profile"
-            android:layout_width="60dp"
-            android:layout_height="117dp"
-            android:layout_marginTop="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.95"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/profile"
-             />
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="157dp"
-            android:layout_height="160dp"
-            android:layout_rowWeight="2"
-            android:layout_columnWeight="2"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="8dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="226dp">
-
-                <ImageView
-                    android:id="@+id/imageView4"
+                <TextView
+                    android:id="@+id/cylinder_na"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/litro" />
-        </androidx.cardview.widget.CardView>
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="190dp"
+                    android:layout_marginBottom="668dp"
+                    android:text="GAS CYLINDER"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/arrow"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
 
-        <TextView
-            android:id="@+id/cylinder_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="12.5 kg Litro Regular"
-            android:textColor="@color/black"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="403dp" />
 
-        <TextView
-            android:id="@+id/cylinder_price"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="LKR 10,000 "
-            android:textColor="@color/black"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="445dp" />
+                <ImageView
+                    android:id="@+id/arrow"
+                    android:layout_width="39dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="363dp"
+                    android:layout_marginBottom="666dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/arrow"
+                    tools:ignore="MissingConstraints" />
 
-        <TextView
 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="select Qty "
-            android:textColor="@color/gray"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="485dp" />
+                <ImageView
+                    android:id="@+id/profile"
+                    android:layout_width="68dp"
+                    android:layout_height="59dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="17dp"
+                    android:layout_marginBottom="651dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.95"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/profile" />
 
-        <EditText
-            android:id="@+id/editTextNumber"
-            android:layout_width="70dp"
-            android:layout_height="32dp"
-            android:ems="10"
-            android:inputType="number"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="524dp" />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="157dp"
+                    android:layout_height="160dp"
+                    android:layout_rowWeight="2"
+                    android:layout_columnWeight="2"
+                    android:layout_marginTop="168dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="8dp"
+                    app:layout_constraintBottom_toTopOf="@+id/cardView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cylinder_na"
+                    app:layout_constraintVertical_bias="0.701"
+                    tools:ignore="MissingConstraints">
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="51dp"
-            android:layout_height="40dp"
-            app:srcCompat="@drawable/minus"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="109dp"
-            tools:layout_editor_absoluteY="524dp" />
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/litro" />
+                </androidx.cardview.widget.CardView>
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="72dp"
-            android:layout_height="50dp"
-            app:srcCompat="@drawable/plus"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="254dp"
-            tools:layout_editor_absoluteY="524dp" />
+                <TextView
+                    android:id="@+id/cylinder_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="403dp"
+                    android:layout_marginBottom="293dp"
+                    android:text="12.5 kg Litro Regular"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
 
-        <TextView
+                <TextView
+                    android:id="@+id/cylinder_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="445dp"
+                    android:layout_marginBottom="251dp"
+                    android:text="LKR 10,000 "
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Total  "
-            android:textColor="@color/black"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.14"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="606dp" />
+                <TextView
 
-        <Button
-            android:id="@+id/addtocart"
-            android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:layout_gravity="center"
-            android:background="@drawable/custom_button"
-            android:text="@string/addtocart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="485dp"
+                    android:layout_marginBottom="214dp"
+                    android:text="select Qty "
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
 
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="666dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+                <EditText
+                    android:id="@+id/editTextNumber"
+                    android:layout_width="70dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="524dp"
+                    android:layout_marginBottom="170dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="51dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="109dp"
+                    android:layout_marginTop="524dp"
+                    android:layout_marginEnd="251dp"
+                    android:layout_marginBottom="162dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/minus"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="72dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="254dp"
+                    android:layout_marginTop="524dp"
+                    android:layout_marginEnd="85dp"
+                    android:layout_marginBottom="152dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/plus"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="606dp"
+                    android:layout_marginBottom="90dp"
+                    android:text="Total  "
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.14"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/addtocart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="666dp"
+                    android:background="@drawable/custom_button"
+                    android:onClick="onClickAdd"
+                    android:text="@string/addtocart"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

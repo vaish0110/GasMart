@@ -10,6 +10,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GasMart">
+
+        <activity
+            android:name=".dashboard"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".register"
             android:exported="true">
@@ -25,15 +35,10 @@
 
         </activity>
         <activity
-            android:name=".dashboard"
+            android:name=".order"
             android:exported="false">
-
         </activity>
-        <activity
-            android:name=".product"
-            android:exported="false">
 
-        </activity>
         <activity
             android:name=".cylinder"
             android:exported="false">
@@ -44,6 +49,88 @@
             android:exported="false">
 
         </activity>
+
+        <activity
+            android:name=".addcard"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".editcard"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".visa"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".addpaymentmethod"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".wallet"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".editprofile"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".findUs"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".profile"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".product"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".pastorder"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".currentorder"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".editorder"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".cylinderView"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".forgotpassword"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".mycart"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".refill"
+            android:exported="false">
+
+        </activity>
+
     </application>
 
 </manifest>

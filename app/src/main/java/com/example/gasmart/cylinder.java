@@ -14,9 +14,6 @@ public class cylinder extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_cylinder);
 
-            buttonClick();
-        }
-        void buttonClick(){
             litrobig=findViewById(R.id.litrobig);
             laugfsbig=findViewById(R.id.laugfsbig);
             laugfsmedium=findViewById(R.id.laugfsmedium);
@@ -66,7 +63,10 @@ public class cylinder extends AppCompatActivity {
                     startActivity(intent);
                 }
             });
-
         }
+
+
+
+
 }
 

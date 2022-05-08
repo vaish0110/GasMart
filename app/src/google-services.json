@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "181029563810",
+    "project_id": "gasmart-ed3e0",
+    "storage_bucket": "gasmart-ed3e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:181029563810:android:88b34ad5d175b5a25a16fb",
+        "android_client_info": {
+          "package_name": "com.company.GasMart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "181029563810-cnubdhvuq8ej16pkgajbcfrcvbc9of0v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1aO5QXTrp-frH8lhRAxD8pKaWk5q2Ag8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "181029563810-cnubdhvuq8ej16pkgajbcfrcvbc9of0v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

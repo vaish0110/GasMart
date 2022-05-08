@@ -3,25 +3,25 @@ package com.example.gasmart;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class cylinderView extends AppCompatActivity {
-    Button add;
-
+public class home extends AppCompatActivity {
+    ImageView logo;
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cylinderview);
-       add=findViewById(R.id.addtocart);
+        setContentView(R.layout.activity_home);
 
-        add.setOnClickListener(new View.OnClickListener() {
+        logo=findViewById(R.id.logo);
+
+        logo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent= new Intent(cylinderView.this,mycart.class);
+                Intent intent= new Intent(home.this,register.class);
                 startActivity(intent);
             }
         });
-
     }
 }

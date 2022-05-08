@@ -4,12 +4,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/background"
+            android:layout_height="match_parent"
+
             tools:context=".GasMart">
 
                 <TextView
@@ -20,13 +21,14 @@
                     android:textColor="@color/black"
                     android:textSize="25sp"
                     android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/arrow"
                     tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteX="60dp"
-                    tools:layout_editor_absoluteY="24dp" />
+                    tools:layout_editor_absoluteY="26dp" />
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="200dp"
+                    android:id="@+id/cardView3"
+                    android:layout_width="376dp"
+                    android:layout_height="166dp"
                     android:layout_margin="10dp"
                     app:cardBackgroundColor="@color/white"
                     app:cardCornerRadius="20dp"
@@ -34,11 +36,13 @@
                     app:cardMaxElevation="12dp"
                     app:cardPreventCornerOverlap="true"
                     app:cardUseCompatPadding="true"
+                    app:layout_constraintBottom_toTopOf="@+id/cardView"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintHorizontal_bias="0.542"
                     app:layout_constraintStart_toStartOf="parent"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteY="120dp">
+                    app:layout_constraintTop_toBottomOf="@+id/product"
+                    app:layout_constraintVertical_bias="1.0"
+                    tools:ignore="MissingConstraints">
 
                         <Button
                             android:id="@+id/gascylinder"
@@ -56,20 +60,22 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="200dp"
+                    android:id="@+id/cardView"
+                    android:layout_width="388dp"
+                    android:layout_height="184dp"
                     android:layout_margin="10dp"
+                    android:layout_marginBottom="16dp"
                     app:cardBackgroundColor="@color/white"
                     app:cardCornerRadius="20dp"
                     app:cardElevation="10dp"
                     app:cardMaxElevation="12dp"
                     app:cardPreventCornerOverlap="true"
                     app:cardUseCompatPadding="true"
+                    app:layout_constraintBottom_toTopOf="@+id/cardView2"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintHorizontal_bias="0.782"
                     app:layout_constraintStart_toStartOf="parent"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteY="307dp">
+                    tools:ignore="MissingConstraints">
 
                         <Button
                             android:id="@+id/refill"
@@ -86,8 +92,9 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="200dp"
+                    android:id="@+id/cardView2"
+                    android:layout_width="392dp"
+                    android:layout_height="174dp"
                     android:layout_margin="10dp"
                     app:cardBackgroundColor="@color/white"
                     app:cardCornerRadius="20dp"
@@ -95,11 +102,11 @@
                     app:cardMaxElevation="12dp"
                     app:cardPreventCornerOverlap="true"
                     app:cardUseCompatPadding="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintHorizontal_bias="0.684"
                     app:layout_constraintStart_toStartOf="parent"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteY="497dp">
+                    tools:ignore="MissingConstraints">
 
                         <Button
                             android:id="@+id/accessories"
@@ -120,19 +127,21 @@
                     android:layout_width="39dp"
                     android:layout_height="36dp"
                     app:srcCompat="@drawable/arrow"
+                    tools:ignore="MissingConstraints"
                     tools:layout_editor_absoluteX="9dp"
-                    tools:layout_editor_absoluteY="24dp"
-                    tools:ignore="MissingConstraints" />
+                    tools:layout_editor_absoluteY="24dp" />
 
                 <ImageView
                     android:id="@+id/profile"
-                    android:layout_width="60dp"
-                    android:layout_height="117dp"
-                    android:layout_marginTop="16dp"
+                    android:layout_width="63dp"
+                    android:layout_height="91dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintBottom_toTopOf="@+id/cardView3"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.95"
+                    app:layout_constraintHorizontal_bias="0.974"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
                     app:srcCompat="@drawable/profile"
                     tools:ignore="MissingConstraints" />
 

@@ -5,135 +5,151 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/background"
-    tools:context=".login">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background"
+            tools:context=".login">
 
 
-
-
-
-
-
-        <TextView
-            android:id="@+id/currentorder"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="MY DASHBOARD"
-            android:textColor="@color/black"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="27dp"
-            tools:layout_editor_absoluteY="28dp" />
-
-        <ImageView
-            android:id="@+id/profile"
-            android:layout_width="60dp"
-            android:layout_height="117dp"
-            android:layout_marginTop="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.95"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/profile"
-            tools:ignore="MissingConstraints" />
-
-
-        =<androidx.cardview.widget.CardView
-            android:layout_width="157dp"
-            android:layout_height="160dp"
-            android:layout_rowWeight="2"
-            android:layout_columnWeight="2"
-            android:layout_marginStart="219dp"
-            android:layout_marginTop="197dp"
-            android:layout_marginEnd="35dp"
-            android:layout_marginBottom="374dp"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints">
-
-
-                <ImageView
-                    android:id="@+id/vieworder"
+                <TextView
+                    android:id="@+id/currentorder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:onClick="onClickViewOrder"
-                    app:srcCompat="@drawable/orders" />
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="157dp"
-            android:layout_height="160dp"
-            android:layout_rowWeight="2"
-            android:layout_columnWeight="2"
-            android:layout_marginStart="27dp"
-            android:layout_marginTop="197dp"
-            android:layout_marginEnd="227dp"
-            android:layout_marginBottom="374dp"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints">
-
+                    android:layout_marginStart="27dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="192dp"
+                    android:layout_marginBottom="669dp"
+                    android:text="MY DASHBOARD"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
 
                 <ImageView
-                    android:id="@+id/viewproduct"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="onClickProduct"
-                    app:srcCompat="@drawable/product2" />
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="157dp"
-            android:layout_height="160dp"
-            android:layout_rowWeight="2"
-            android:layout_columnWeight="2"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="8dp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="219dp"
-            tools:layout_editor_absoluteY="399dp">
+                    android:id="@+id/profile"
+                    android:layout_width="60dp"
+                    android:layout_height="117dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.95"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/profile"
+                    tools:ignore="MissingConstraints" />
 
 
-                <ImageView
-                    android:id="@+id/viewsetting"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="onClickSetting"
-                    app:srcCompat="@drawable/settings" />
-        </androidx.cardview.widget.CardView>
+                =
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="157dp"
-            android:layout_height="160dp"
-            android:layout_rowWeight="2"
-            android:layout_columnWeight="2"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="8dp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="27dp"
-            tools:layout_editor_absoluteY="399dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="157dp"
+                    android:layout_height="160dp"
+                    android:layout_rowWeight="2"
+                    android:layout_columnWeight="2"
+                    android:layout_marginStart="219dp"
+                    android:layout_marginTop="197dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginBottom="374dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints">
+
+                        <ImageView
+                            android:id="@+id/vieworder"
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/order" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="157dp"
+                    android:layout_height="160dp"
+                    android:layout_rowWeight="2"
+                    android:layout_columnWeight="2"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginTop="197dp"
+                    android:layout_marginEnd="227dp"
+                    android:layout_marginBottom="374dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints">
+
+                        <ImageView
+                            android:id="@+id/viewproduct"
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/product2" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="157dp"
+                    android:layout_height="160dp"
+                    android:layout_rowWeight="2"
+                    android:layout_columnWeight="2"
+                    android:layout_marginStart="219dp"
+                    android:layout_marginTop="399dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginBottom="172dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints">
 
 
-                <ImageView
-                    android:id="@+id/viewprofile"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="onClickProfile"
-                    app:srcCompat="@drawable/profile2" />
-        </androidx.cardview.widget.CardView>
+                        <ImageView
+                            android:id="@+id/viewsetting"
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:layout_gravity="center"
+                            android:onClick="onClickSetting"
+                            app:srcCompat="@drawable/settings" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="157dp"
+                    android:layout_height="160dp"
+                    android:layout_rowWeight="2"
+                    android:layout_columnWeight="2"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginTop="399dp"
+                    android:layout_marginEnd="227dp"
+                    android:layout_marginBottom="172dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints">
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+                        <ImageView
+                            android:id="@+id/viewprofile"
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:layout_gravity="center"
+                            android:onClick="onClickProfile"
+                            app:srcCompat="@drawable/profile2" />
+                </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
