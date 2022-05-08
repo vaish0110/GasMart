@@ -13,7 +13,7 @@ public class currentorder extends AppCompatActivity {
     ImageView arrow,edit;
     Button cancelOrder;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) { // oncreate
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_currentorder);
 
