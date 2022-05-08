@@ -4,27 +4,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background">
-
-
-
-
+    >
 
 
     <TextView
-        android:id="@+id/currentorder"
+        android:id="@+id/addPMethod"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
         android:text="Add Payment Method"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/arrow"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="60dp"
         tools:layout_editor_absoluteY="24dp" />
 
     <ImageView
@@ -39,15 +37,14 @@
 
     <ImageView
         android:id="@+id/profile"
-        android:layout_width="60dp"
-        android:layout_height="117dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="55dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintHorizontal_bias="0.974"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/profile"
-        />
+        app:srcCompat="@drawable/profile" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="393dp"
@@ -59,6 +56,9 @@
         app:cardMaxElevation="12dp"
         app:cardPreventCornerOverlap="true"
         app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addPMethod"
+
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="9dp"
         tools:layout_editor_absoluteY="145dp">
@@ -72,63 +72,100 @@
                 android:id="@+id/paypal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="101dp"
+                android:layout_marginTop="252dp"
+                android:layout_marginEnd="178dp"
+                android:layout_marginBottom="159dp"
                 android:text="@string/paypal"
                 android:textColor="@color/black"
                 android:textSize="25sp"
                 android:textStyle="bold"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="101dp"
-                tools:layout_editor_absoluteY="252dp" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
 
             <TextView
 
                 android:id="@+id/cash"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="97dp"
+                android:layout_marginTop="146dp"
+                android:layout_marginEnd="203dp"
+                android:layout_marginBottom="266dp"
                 android:text="@string/cash"
                 android:textColor="@color/black"
                 android:textSize="25sp"
                 android:textStyle="bold"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="97dp"
-                tools:layout_editor_absoluteY="146dp" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
 
             <TextView
 
                 android:id="@+id/credit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="101dp"
+                android:layout_marginTop="46dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="365dp"
+                android:onClick="onClickCredit"
                 android:text="@string/creditordebit"
                 android:textColor="@color/black"
                 android:textSize="25sp"
                 android:textStyle="bold"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="102dp"
-                tools:layout_editor_absoluteY="46dp" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
 
             <ImageView
                 android:id="@+id/imageView5"
                 android:layout_width="58dp"
                 android:layout_height="47dp"
-                app:srcCompat="@drawable/paypal"
-                tools:layout_editor_absoluteX="21dp"
-                tools:layout_editor_absoluteY="252dp" />
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="252dp"
+                android:layout_marginEnd="278dp"
+                android:layout_marginBottom="146dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/paypal" />
 
             <ImageView
                 android:id="@+id/imageView10"
                 android:layout_width="50dp"
                 android:layout_height="28dp"
-                app:srcCompat="@drawable/cash"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="146dp" />
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="146dp"
+                android:layout_marginEnd="291dp"
+                android:layout_marginBottom="272dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/cash" />
 
             <ImageView
                 android:id="@+id/imageView6"
                 android:layout_width="43dp"
                 android:layout_height="34dp"
-                app:srcCompat="@drawable/creditcard"
-                tools:layout_editor_absoluteX="22dp"
-                tools:layout_editor_absoluteY="45dp" />
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginEnd="293dp"
+                android:layout_marginBottom="367dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/creditcard" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
